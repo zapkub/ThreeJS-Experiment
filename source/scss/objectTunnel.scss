@@ -1,0 +1,82 @@
+.post {
+  max-width: 150px;
+  box-sizing: border-box;
+  padding: 5px;
+  background: rgba(255,255,255,0.8);
+  position: fixed;
+  z-index: -1;
+  color: grey;
+//  margin-left:-99999px;
+  //border: 1px solid black;
+  border-bottom: 15px solid #819c87;
+  border-top: 15px solid #819c87;
+  cursor: pointer;
+  &:hover {
+    background: #819c87;
+      color: white;
+    .wrap {
+
+    }
+  }
+
+
+
+  //End Selected
+  .close-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 48px;
+    color: #e3e3e3;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .wrap {
+    color: grey;
+
+    //text-shadow:0px 0px 5px black;
+  }
+  .post-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .name {
+    font-weight: bold;
+    font-size: 12px;
+    span {
+      font-size: 10px;
+      font-weight: lighter;
+    }
+  }
+  .text {
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: left;
+  //  font-weight: normal;
+
+  }
+  .profile_pic {
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #819c87;
+    position: absolute;
+    left: -50px;
+    transform: translate(-50%,0);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .media-photo {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}

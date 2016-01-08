@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="TimeMachine">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="lib/angularjs-slider/dist/rzslider.min.css" rel="stylesheet">
+    <link href="css/objectTunnel.css" rel="stylesheet">
+  </head>
+  <body ng-controller="mainController">
+    <div class="hud" id="hud">
+      {{timeSlider}}
+      <rzslider rz-slider-model="timeSlider"></rzslider>
+    </div>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+
+    <script src="lib/underscore/underscore-min.js"></script>
+    <script src="lib/threejs/build/three.min.js"></script>
+    <script src="lib/threejs/examples/js/controls/OrbitControls.js"></script>
+    <script src="lib/angularjs-slider/dist/rzslider.min.js"></script>
+    <script src="lib/gsap/src/minified/TweenLite.min.js"></script>
+    <script src="js/CSS3DRenderer.js"></script>
+    <script src="js/objectTunnel.js"></script>
+  </body>
+</html>

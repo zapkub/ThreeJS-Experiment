@@ -1,0 +1,24 @@
+body {
+  margin: 0; }
+  body .hud {
+    z-index: 99;
+    position: fixed; }
+  body .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh; }
+    body .container .menu {
+      padding: 20px;
+      box-sizing: border-box; }
+    body .container .example-wrap {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box; }
+      body .container .example-wrap iframe {
+        width: 100%;
+        height: 100%;
+        border: none; }
+
+/*# sourceMappingURL=main.css.map */

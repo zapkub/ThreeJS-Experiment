@@ -1,0 +1,26 @@
+body{
+  margin:0;
+  .hud{
+    z-index: 99;
+    position: fixed;
+  }
+  .container {
+    display:flex;
+    height: 100vh;
+    .menu {
+      padding:20px;
+      box-sizing: border-box;
+    }
+    .example-wrap{
+      width:100%;
+      height:100%;
+      padding:20px;
+      box-sizing: border-box;
+      iframe {
+        width:100%;
+        height:100%;
+        border:none;
+      }
+    }
+  }
+}

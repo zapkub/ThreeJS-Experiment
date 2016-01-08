@@ -1,0 +1,28 @@
+{
+  "name": "ThreeJS-Experiment",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zapkub/ThreeJS-Experiment",
+  "authors": [
+    "Rungsikorn <rungsikorn@me.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "threestrap": "~0.0.11",
+    "threejs": "*",
+    "angular-route": "~1.4.8",
+    "underscore": "~1.8.3",
+    "angularjs-slider": "~2.4.0",
+    "moment": "~2.11.0",
+    "jquery": "~2.1.4",
+    "gsap": "~1.18.2"
+  }
+}
