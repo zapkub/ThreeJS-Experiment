@@ -2,15 +2,35 @@
 <html ng-app="TimeMachine">
   <head>
     <meta charset="utf-8">
+    <meta content="width=320 ,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <title></title>
-
+    <link href="css/semantic.min.css" rel="stylesheet">
     <link href="lib/angularjs-slider/dist/rzslider.min.css" rel="stylesheet">
     <link href="css/objectTunnel.css" rel="stylesheet">
   </head>
   <body ng-controller="mainController">
+    <div class="logo">
+      <img src="images/hud/logo.png">
+    </div>
     <div class="hud" id="hud">
-      {{timeSlider}}
-      <rzslider rz-slider-model="timeSlider"></rzslider>
+      <!-- {{sliderOptions}} -->
+      <rzslider rz-slider-model="timeSlider" rz-slider-options="sliderOptions.options"></rzslider>
+    </div>
+
+    <div class="guide">
+      <img src="images/hud/zoom.png">
+      <img src="images/hud/move.png">
+    </div>
+    <div class='controller-menu'>
+      <div class="left text">
+        <span class="gth-text">© 2015 All Right Reserved Gmm Tai Hub Co.,Ltd </span><span class="tsf-text">Made with ♥ by <a target="_blank" href="http://www.thesecretfarm.com">The Secret Farm Co.,Ltd</a> </span>
+      </div>
+      <div class="controller" ng-show="isStart">
+        <i class="fa " ng-class="{'fa-play-circle-o' : !isPlay,'fa-pause-circle-o':isPlay}" ng-click="isPlay = !isPlay"></i>
+        <a class="blur-toogle" ng-click="isBlur = !isBlur" ng-class="{'toogle':isBlur}">DOF</a>
+        <a class="particle-toggle" ng-class="{'toogle':isShowParticle}" ng-click="toogleParticle()"><img width="30" src="images/ming.png"</a>
+      </div>
+
     </div>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
@@ -20,6 +40,7 @@
     <script src="lib/threejs/examples/js/controls/OrbitControls.js"></script>
     <script src="lib/angularjs-slider/dist/rzslider.min.js"></script>
     <script src="lib/gsap/src/minified/TweenLite.min.js"></script>
+    <script src="js/microcache.js"></script>
     <script src="js/CSS3DRenderer.js"></script>
     <script src="js/objectTunnel.js"></script>
   </body>
